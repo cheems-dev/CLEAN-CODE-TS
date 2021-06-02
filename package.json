@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "build": "rm -rf dist && tsc -w"
+    "build": "rm -rf dist && tsc -w",
+    "lint": "npx eslint --fix --ext .ts"
   },
   "keywords": [],
   "author": "",

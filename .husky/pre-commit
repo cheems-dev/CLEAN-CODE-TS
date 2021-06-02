@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname $0)/_/husky.sh"
+
+npx tsc --noemit && npx eslint --fix --ext .ts .
+npx lint-staged
+# npm run test
+# Whatever command you want to run

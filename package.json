@@ -6,7 +6,9 @@
   "scripts": {
     "prepare": "husky install",
     "build": "rm -rf dist && tsc -w",
-    "lint": "npx eslint --fix --ext .ts"
+    "lint": "npx eslint --fix --ext .ts",
+    "test": "jest --passWithNoTests --watch",
+    "test:staged": "jest --passWithNoTests"
   },
   "keywords": [],
   "author": "",

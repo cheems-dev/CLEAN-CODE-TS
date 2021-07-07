@@ -7,8 +7,9 @@
     "prepare": "husky install",
     "build": "rm -rf dist && tsc -w",
     "lint": "npx eslint --fix --ext .ts",
-    "test": "jest --passWithNoTests --watch",
-    "test:staged": "jest --passWithNoTests"
+    "test": "jest --passWithNoTests --watch --detectOpenHandles",
+    "test:staged": "jest --passWithNoTests",
+    "start:dev": "nodemon dist/main.js"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "husky": "^6.0.0",
     "jest": "^27.0.3",
     "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.7",
     "prettier": "^2.3.0",
     "ts-jest": "^27.0.2",
     "ts-node": "^10.0.0",

@@ -1,5 +1,5 @@
 export default {
-  roots: ['<rootDir>/src/**/*'],
+  roots: ['<rootDir>/src/tests/'],
   collectCoverage: true,
   coverageDirectory: 'coverage',
   coverageProvider: 'v8',
